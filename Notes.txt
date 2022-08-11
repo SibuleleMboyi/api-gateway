@@ -1,8 +1,8 @@
+IF YOU WANT TO IMPLEMENT SECURITY, it must be here in the API Gateway
+
 1) The API Gateway Micro-Service acts as a standard port for all our Micro-Services.
 2) Instead of having each Micro-Service being called from it's individual configured port,
 3) We expose all our Micro-Services to the Eureka Naming Server.
 
 4) We configure the API Gateway Micro-Service to talk communicate with the Eureka Naming Server.
 5) The API Gateway then gets all the Micro-Services URLs and expose them via it's port.
-
-IF YOU WANT TO IMPLEMENT SECURITY, it must be here in the API Gateway

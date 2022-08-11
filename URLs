@@ -1,0 +1,21 @@
+URLs:
+    Eureka Naming Server:
+        http://localhost:8761/
+    API Gateway:
+        1) http://localhost:8765/currency-exchange/jpa-currency-exchange/from/USD/to/INR
+        2) http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/100
+
+    Currency-Exchange:
+        http://localhost:8000/jpa-currency-exchange/from/USD/to/INR
+
+    Currency-Conversion:
+        http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/200
+        
+
+- To format our URLs, in the application.properties file, we allow URLs to be lowercase.
+- So instead of a service name "CURRENCY-EXCHANGE" as registered in Eureka Naming Server Micro-Service()
+- We lowercase this name to "currency-exchange".
+- Therefore our URLs become :-
+    1) http://localhost:8765/currency-exchange/jpa-currency-exchange/from/USD/to/INR
+
+    2) http://localhost:8765/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/100
