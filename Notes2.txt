@@ -1,0 +1,13 @@
+Circuit Breaker
+
+What if one of the services is down or is slow?
+    - It impacts the entire chain.
+
+Questions:-
+    - Can we return a fallback response if a service is down?
+    - Can we implement a Circuit Breaker pattern to reduce load
+        ( i.e Avoid making further requests once we are aware that the service is permanently down) ?
+    - Can we retry requests in case of temporary failures?
+    - Can we implement rate limiting? (i.e allowing a certain number of requests in a period of time)
+
+Solution : Circuit Breaker Framework - Resilience4j
